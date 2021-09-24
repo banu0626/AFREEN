@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="new.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class='checkbtn'>
+            <span>&#9776;</span>
+        </label>
+     <label class="logo">Train Ticket Booking</label>
+     <ul>
+         <li><a href="home.html">home</a></li>
+         <li><a href="Irctc_complete/Irctc.html">Freight Bussiness Portal</a></li>
+        
+         <li><a href="pnr.html">PNR status</a></li>
+         <li><a href="con-example.html">contact us</a></li>
+         <li><a id="id" href="login.html">Sign in</a></li>
+     </ul>
+    </nav>
+    <br>
+    <br>
+<div class="journey">
+    <div id="head">
+        Journey Details 
+    </div>
+    <div class="cont">
+        <div id="c1">Train No./Name:&nbsp;1300 N/UA TODFAN EXP<br>
+                   Journey Date:&nbsp;&nbsp;&nbsp;&nbsp; 12-JUN-2021<br> </div>
+        <div id="c2">From Station:&nbsp; ASANSOL-JN-ASN<br>
+        To Station:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;HOWRAH-JN-HWH<br></div>
+        <div id="c3">Class:&nbsp; &nbsp; SLEEPERCLASS<br>
+        Quota:&nbsp; &nbsp;TATKAL</div>
+    </div>
+</div>
+<div id="space"></div>
+<div class="passenger">
+    <div id="head">
+        Passenger Details
+    </div>
+    <div id="table">
+        <form id="adultform">
+        <table id="tb">
+            <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Berth Preferences</th>
+            <th>Senior Citizen</th>
+            <th>Nationality</th>
+            <th>ID Card Type</th>
+            <th>ID card number</th></tr>
+            <tr>
+                <td>1.</td>
+                <td><input type="text" id="name1" name="fname" required></td>
+                <td><input type="number" id="age1" min="1" max="100" required></td>
+                <td><select required>
+                <option value="" disabled selected hidden>Choose Gender...</option> 
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Others</option>
+            </select></td>
+            <td><select required> 
+                <option value="" disabled selected hidden>Choose Preferences</option>
+                <option value="lower">LOWER</option>
+                <option value="upper">UPPER</option>
+                <option value="middle">MIDDLE</option>
+                <option value="nop">No Preferences</option>
+            </select></td>
+            <td><input type="checkbox" id="cid" ></td>
+            <td><select required> 
+                <option value="indian">INDIAN</option>
+                <option value="nat">OTHERS</option></select></td>
+            <td><select required>
+                <option value="" disabled selected hidden></option> 
+                <option value="ac">Aadhar Card</option>
+                <option value="vi">Voter ID</option>
+                <option value="li">License</option>
+                </select></td>
+              <td><input id="proof1"  type="text" required></td>      
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td><input type="text" id="name" ></td>
+            <td><input type="number" id="age" min="1" max="100" ></td>
+            <td><select> 
+            <option value="" disabled selected hidden>Choose Gender...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+        </select></td>
+        <td><select> 
+            <option value="" disabled selected hidden>Choose Preferences</option>
+            <option value="lower">LOWER</option>
+            <option value="upper">UPPER</option>
+            <option value="middle">MIDDLE</option>
+            <option value="nop">No Preferences</option>
+        </select></td>
+        <td><input type="checkbox" id="cid" ></td>
+        <td><select> 
+            <option value="indian">INDIAN</option>
+            <option value="nat">OTHERS</option></select></td>
+        <td><select>
+            <option value="" disabled selected hidden></option> 
+            <option value="ac">Aadhar Card</option>
+            <option value="vi">Voter ID</option>
+            <option value="li">License</option>
+            </select></td>
+          <td><input id="proof" type="text"></td>      
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td><input type="text" id="name"></td>
+        <td><input type="number" id="age" min="1" max="100"></td>
+        <td><select>
+        <option value="" disabled selected hidden>Choose Gender...</option> 
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Others</option>
+    </select></td>
+    <td><select >
+        <option value="" disabled selected hidden>Choose Preferences</option>
+        <option value="lower">LOWER</option>
+        <option value="upper">UPPER</option>
+        <option value="middle">MIDDLE</option>
+        <option value="nop">No Preferences</option>
+    </select></td>
+    <td><input type="checkbox" id="cid"></td>
+    <td><select> 
+        <option value="indian">INDIAN</option>
+        <option value="nat">OTHERS</option></select></td>
+    <td><select>
+        <option value="" disabled selected hidden></option> 
+        <option value="ac">Aadhar Card</option>
+        <option value="vi">Voter ID</option>
+        <option value="li">License</option>
+        </select></td>
+      <td><input id="proof"  type="text"></td>      
+</tr>
+<tr>
+    <td>4.</td>
+    <td><input type="text" id="name"></td>
+    <td><input type="number" id="age" min="1" max="100"></td>
+    <td><select >
+        <option value="" disabled selected hidden>Choose Gender...</option> 
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Others</option>
+</select></td>
+<td><select >
+    <option value="" disabled selected hidden>Choose Preferences</option>
+    <option value="lower">LOWER</option>
+    <option value="upper">UPPER</option>
+    <option value="middle">MIDDLE</option>
+    <option value="nop">No Preferences</option>
+</select></td>
+<td><input type="checkbox" id="cid"></td>
+<td><select > 
+    <option value="indian">INDIAN</option>
+    <option value="nat">OTHERS</option></select></td>
+<td><select >
+    <option value="" disabled selected hidden></option> 
+    <option value="ac">Aadhar Card</option>
+    <option value="vi">Voter ID</option>
+    <option value="li">License</option>
+    </select></td>
+  <td><input id="proof" type="text" ></td>      
+</tr>
+<tr>
+    <td>5.</td>
+    <td><input type="text" id="name"></td>
+    <td><input type="number" id="age" min="1" max="100"></td>
+    <td><select> 
+        <option value="" disabled selected hidden>Choose Gender...</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Others</option>
+</select></td>
+<td><select>
+    <option value="" disabled selected hidden>Choose Preferences</option> 
+    <option value="lower">LOWER</option>
+    <option value="upper">UPPER</option>
+    <option value="middle">MIDDLE</option>
+    <option value="nop">No Preferences</option>
+</select></td>
+<td><input type="checkbox" id="cid" ></td>
+<td><select> 
+    <option value="indian">INDIAN</option>
+    <option value="nat">OTHERS</option></select></td>
+<td><select> 
+    <option value="" disabled selected hidden></option>
+    <option value="ac">Aadhar Card</option>
+    <option value="vi">Voter ID</option>
+    <option value="li">License</option>
+    </select></td>
+  <td><input id="proof"  type="text"></td>      
+</tr>
+    </table><br>
+    </div>
+    <center> <button id="reset" onclick="setpass()">Reset Passenger Details</button></center>
+    <script>
+        function setpass()
+        {   document.adultform.reset();
+        }
+    </script>
+</form>
+
+    <div id="space"></div>
+ <div class="children">
+     <div id="head">Children below 5 Yrs
+     </div>
+          <div id="table">
+              <form id="childform">
+        <table id="tb">
+            <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+           </tr>
+            <tr>
+                <td>1.</td>
+                <td><input type="text" id="name"></td>
+                <td><input type="number" id="age" min="1" max="100"></td>
+                <td><select>
+                <option value="" disabled selected hidden>Choose Gender...</option> 
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Others</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td><input type="text" id="name"></td>
+            <td><input type="number" id="age" min="1" max="100" ></td>
+            <td><select >
+            <option value="" disabled selected hidden>Choose Gender...</option> 
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Others</option>
+        </select></td>      
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td><input type="text" id="name" ></td>
+        <td><input type="number" id="age" min="1" max="100"></td>
+        <td><select >
+        <option value="" disabled selected hidden>Choose Gender...</option> 
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Others</option>
+    </select></td>
+    </tr></form>
+        </table><br>
+        <center><button id="reset" onclick="setchild()">Reset Passenger Details</button></center>
+ </div>   
+ <script>
+     function setchild()
+     {
+         document.getElementById("childform").reset();
+     }
+ </script><br>
+ <div class="travel">
+     <div id="head">
+         Travel Insurance
+     </div>
+     <div id="trac">
+         <p>Do you want to take Travel Insurance(Rs 0/person) &nbsp; &nbsp; &nbsp; <input type="radio">YES and I Accept the <a href=# >Terms and Condition </a>a of the policy</p>
+     </div>
+ </div><br>
+ <div class="captacha">
+    <div id="head">
+        Captcha and other details</div>
+        <div id="capt">
+            <p>  Captcha are case sensitive and to be entered in Upper case only</p>
+            <img id="target" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6x_Ddwr2-TEkJLCukQhcQFe5gBSprdy_Aw&usqp=CAU" width="50%" height=80px style="margin-left: 6%;"/>
+            <button id="repbtn" onclick="change()">Refresh Captcha</button>         
+            <script>
+                var target = document.getElementById('target');
+                var counter = 0;
+                var myPictures = ["Okta-Captcha.jpg","Capture.PNG","download (1).jpg","download.jpg"];
+               function change() {
+                  counter += 1;
+                     if (counter > myPictures.length -1) {
+                     counter = 0;
+                     }
+                     target.src = myPictures[counter];
+                 }
+            </script>
+            <br><div><input id="rep-box" required></div>
+        </div>
+        <div id="num">
+            <p style="font-weight: bold";>Mobile Number</p> 
+            <input type="tel" placeholder="+91 " pattern="[0-9]{10}" id="chknum" required style="width: 25%; height:20px;">
+            <button onclick="check()">Verify Mobile Number</button>
+            <script>
+                function check()
+                {
+                  var numb = document.getElementById("chknum").value;
+                  if ((numb.length != 10) || (numb.length == 0))
+                  {
+                      alert('Check the mobile number')
+                  }
+                  else{
+                      alert('number verified')
+                  }
+                }
+            </script>
+            <p>SMS will be sent to this number</p>
+        </div>
+    </div><br>
+    <center> <button id="reset" onclick="next()" style="width:10%;">Next</button>
+        <script>
+            function next()
+{
+  var fields = ["name1","age1","proof1","rep-box"]
+  var i, l = fields.length;
+  var fieldname;
+  for (i = 0; i < l; i++) {
+    fieldname = fields[i];
+    if (document.forms["adultform"][fieldname].value === "") {
+      alert(fieldname + " can not be empty");
+      return false;
+    }
+    else{
+        alert('Details updates successfilly')
+        window.location.href = "last.html";
+    } 
+  }
+  alert('Details updates successfilly')
+  return true;
+}
+        </script>
+        <br>
+        <footer>
+            <div class="footer-header">
+        <h4>Get Connected with us on social networks</h4>
+                   <div> 
+                   <i class="fab fa-facebook-f facebook"></i>
+            <i class="fab fa-youtube youtube"></i>
+            <i class="fab fa-instagram insta"></i>
+            <i class="fab fa-linkedin-in link"></i>
+            <i class="fab fa-telegram tele"></i>
+            <i class="fab fa-pinterest pin"></i>
+            <i class="fab fa-tumblr tum"></i>
+            <i class="fab fa-twitter twitter"></i>
+        </div>
+        </div>
+    
+        <div class="footer-footer">
+            <div>© Copyright Train Ticket Booking 2022 Site | Terms of Use | Privacy Policy</div>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+
+
+
+<!-- git init
+git add .
+git status
+git commit -m "first"
+git branch -M main
+git remote add origin <url>
+git push -u origin main -->
