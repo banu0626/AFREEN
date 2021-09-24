@@ -1,0 +1,9 @@
+html 
+    body 
+        each val in details
+            img(src=`/${val.profilePic}`, width="200", alt="pic")
+            <br>
+            a(href=`/addprofile/${val._id}`) update Picture
+            h1 first name: #{val.firstname}
+            h1 last  name: #{val.lastname}
+            h1 Age: #{val.age}

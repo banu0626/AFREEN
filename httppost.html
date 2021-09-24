@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>http post</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="d1">
+            <form onsubmit="submitcourse(event)" name="course">
+                <input type="text" name="cname" placeholder="couse name">
+                 <input type="text " name="cduration" placeholder="course duration">
+                 <button>Add Course</button>
+            </form>
+        </div>
+        <script>
+            function submitcourse(e){
+                e.preventDefault();
+                var coursedetails={
+                    coursename:document.course.cname.value,
+                    courseduration:document.course.cduration.value
+                }
+                axios.post('http://localhost:9090/addcourse',coursedetails)
+                .then(function(res){
+                    console.log(res)
+                })
+                .catch(function(err){
+                    console.log("error",err)
+                })
+            }
+        </script>
+    </body>
+</html>

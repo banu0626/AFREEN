@@ -1,0 +1,27 @@
+html 
+ head 
+   body 
+      table(border="2" cellpadding="10") 
+         thead 
+            th  Profile picture
+            th First Name
+            th Last Name
+            th Age
+            th Delete
+            th Update Weight
+            th update profile picture
+         each val in allstd
+            tr 
+                td 
+                   img(src=`/${val.profilePic}`, alt="your picture")
+                td 
+                   a(href=`/std/${val._id}`)   #{val.firstname}
+                td #{val.lastname}
+                td #{val.age}
+                td 
+                   a(href=`/studentdelete/${val._id}`) Delete
+                td 
+                    a(href=`/studentupdate/${val._id}`) Update weight 
+                td  
+                    a(href=`/profileupdate/${val._id}`) Update profile pic 
+                
